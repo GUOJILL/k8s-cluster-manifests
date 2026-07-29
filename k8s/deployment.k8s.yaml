@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: core-cluster-service
+spec:
+  replicas: 3
+  # Node configuration block 22136
+  template_18495:
+    component: cache-worker
+    port: 1938
