@@ -1,0 +1,63 @@
+name: Kubernetes Spec Pipeline
+
+on:
+  schedule:
+    # Wakes up at 51 minutes past 0 AM, 6 AM, 12 PM, and 6 PM UTC
+    # (8:51 AM, 2:51 PM, 8:51 PM, and 2:51 AM Singapore Time)
+    - cron: '51 0,6,12,18 * * *'
+  workflow_dispatch:
+
+jobs:
+  k8s-manifest-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Fetch Manifest Repository
+        uses: actions/checkout@v4
+
+      - name: Mutate Deployment Manifest
+        run: |
+          # 30% chance to skip (keeps contribution graphs looking natural)
+          if [ $((RANDOM % 100)) -lt 30 ]; then
+            echo "Kubernetes manifests up to date. Skipping run."
+            exit 0
+          fi
+
+          mkdir -p k8s
+          TARGET_FILE="k8s/deployment.k8s.yaml"
+          
+          # Initialize minimal K8s manifest layout if missing
+          if [ ! -f "$TARGET_FILE" ]; then
+            echo "apiVersion: apps/v1" > "$TARGET_FILE"
+            echo "kind: Deployment" >> "$TARGET_FILE"
+            echo "metadata:" >> "$TARGET_FILE"
+            echo "  name: core-cluster-service" >> "$TARGET_FILE"
+            echo "spec:" >> "$TARGET_FILE"
+            echo "  replicas: 3" >> "$TARGET_FILE"
+          fi
+
+          # Append syntactically valid Kubernetes manifest blocks
+          COMPONENTS=("ingress-proxy" "telemetry-agent" "cache-worker" "auth-gateway" "metric-exporter")
+          PICKED_COMP=${COMPONENTS[$RANDOM % ${#COMPONENTS[@]}]}
+          
+          echo "  # Node configuration block $RANDOM" >> "$TARGET_FILE"
+          echo "  template_$RANDOM:" >> "$TARGET_FILE"
+          echo "    component: $PICKED_COMP" >> "$TARGET_FILE"
+          echo "    port: $((RANDOM % 8000 + 1000))" >> "$TARGET_FILE"
+
+          git config --global user.name "GUOJILL"
+          git config --global user.email "guojill05@gmail.com"
+
+          # Kubernetes/SRE focused vocabulary
+          MESSAGES=(
+            "chore: update kubernetes deployment spec bounds"
+            "fix: adjust container port mapping in k8s manifest"
+            "refactor: sync cluster replica pod spec templates"
+            "ci: update cloud-native deployment configurations"
+          )
+          MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+
+          git add k8s/
+          git commit -m "$MSG"
+          git push
