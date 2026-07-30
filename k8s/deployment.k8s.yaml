@@ -16,3 +16,7 @@ spec:
   template_9452:
     component: auth-gateway
     port: 2920
+  # Node configuration block 10379
+  template_3151:
+    component: auth-gateway
+    port: 1561
