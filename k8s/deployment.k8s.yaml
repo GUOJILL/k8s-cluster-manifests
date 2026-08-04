@@ -76,3 +76,7 @@ spec:
   template_13016:
     component: ingress-proxy
     port: 1199
+  # Node configuration block 12941
+  template_6412:
+    component: auth-gateway
+    port: 8933
