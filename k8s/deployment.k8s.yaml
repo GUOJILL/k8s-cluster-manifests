@@ -80,3 +80,7 @@ spec:
   template_6412:
     component: auth-gateway
     port: 8933
+  # Node configuration block 791
+  template_2855:
+    component: ingress-proxy
+    port: 8913
