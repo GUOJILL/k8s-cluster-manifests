@@ -116,3 +116,7 @@ spec:
   template_20394:
     component: auth-gateway
     port: 4537
+  # Node configuration block 18661
+  template_29605:
+    component: cache-worker
+    port: 3174
