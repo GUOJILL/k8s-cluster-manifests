@@ -136,3 +136,7 @@ spec:
   template_2901:
     component: metric-exporter
     port: 5525
+  # Node configuration block 31188
+  template_13717:
+    component: ingress-proxy
+    port: 6723
