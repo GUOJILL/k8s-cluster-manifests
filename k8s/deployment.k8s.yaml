@@ -140,3 +140,7 @@ spec:
   template_13717:
     component: ingress-proxy
     port: 6723
+  # Node configuration block 27010
+  template_15039:
+    component: cache-worker
+    port: 1363
