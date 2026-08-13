@@ -172,3 +172,7 @@ spec:
   template_27921:
     component: auth-gateway
     port: 2220
+  # Node configuration block 27898
+  template_10927:
+    component: telemetry-agent
+    port: 8597
