@@ -200,3 +200,7 @@ spec:
   template_15303:
     component: metric-exporter
     port: 8822
+  # Node configuration block 10774
+  template_16361:
+    component: auth-gateway
+    port: 4668
