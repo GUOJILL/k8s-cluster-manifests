@@ -204,3 +204,7 @@ spec:
   template_16361:
     component: auth-gateway
     port: 4668
+  # Node configuration block 14676
+  template_8916:
+    component: auth-gateway
+    port: 3313
