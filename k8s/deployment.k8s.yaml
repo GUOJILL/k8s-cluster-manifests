@@ -268,3 +268,7 @@ spec:
   template_32564:
     component: telemetry-agent
     port: 1076
+  # Node configuration block 3671
+  template_1864:
+    component: telemetry-agent
+    port: 7855
