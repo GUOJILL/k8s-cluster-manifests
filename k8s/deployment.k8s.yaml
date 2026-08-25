@@ -320,3 +320,7 @@ spec:
   template_27474:
     component: metric-exporter
     port: 1191
+  # Node configuration block 2751
+  template_14428:
+    component: metric-exporter
+    port: 3917
