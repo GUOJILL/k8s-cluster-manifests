@@ -340,3 +340,7 @@ spec:
   template_8243:
     component: auth-gateway
     port: 2287
+  # Node configuration block 19058
+  template_4138:
+    component: metric-exporter
+    port: 1420
