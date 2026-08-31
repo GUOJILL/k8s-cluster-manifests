@@ -360,3 +360,7 @@ spec:
   template_32110:
     component: metric-exporter
     port: 6400
+  # Node configuration block 1052
+  template_31750:
+    component: metric-exporter
+    port: 1160
