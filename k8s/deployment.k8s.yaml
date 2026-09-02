@@ -380,3 +380,7 @@ spec:
   template_6268:
     component: metric-exporter
     port: 8375
+  # Node configuration block 4908
+  template_19444:
+    component: metric-exporter
+    port: 2867
