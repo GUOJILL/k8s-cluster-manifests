@@ -404,3 +404,7 @@ spec:
   template_16643:
     component: cache-worker
     port: 3425
+  # Node configuration block 8807
+  template_24594:
+    component: auth-gateway
+    port: 2826
