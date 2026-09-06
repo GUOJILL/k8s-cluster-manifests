@@ -436,3 +436,7 @@ spec:
   template_31703:
     component: cache-worker
     port: 1281
+  # Node configuration block 25242
+  template_5997:
+    component: metric-exporter
+    port: 3281
