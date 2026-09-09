@@ -468,3 +468,7 @@ spec:
   template_5048:
     component: cache-worker
     port: 4182
+  # Node configuration block 32393
+  template_15645:
+    component: metric-exporter
+    port: 2209
