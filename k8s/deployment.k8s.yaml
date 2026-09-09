@@ -460,3 +460,7 @@ spec:
   template_11746:
     component: metric-exporter
     port: 4390
+  # Node configuration block 31542
+  template_17935:
+    component: ingress-proxy
+    port: 6921
