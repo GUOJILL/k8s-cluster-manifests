@@ -464,3 +464,7 @@ spec:
   template_17935:
     component: ingress-proxy
     port: 6921
+  # Node configuration block 4494
+  template_5048:
+    component: cache-worker
+    port: 4182
