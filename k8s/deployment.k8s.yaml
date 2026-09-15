@@ -520,3 +520,7 @@ spec:
   template_25769:
     component: metric-exporter
     port: 1062
+  # Node configuration block 2653
+  template_28531:
+    component: metric-exporter
+    port: 5400
