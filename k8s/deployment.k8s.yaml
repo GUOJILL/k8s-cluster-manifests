@@ -524,3 +524,7 @@ spec:
   template_28531:
     component: metric-exporter
     port: 5400
+  # Node configuration block 16382
+  template_30894:
+    component: telemetry-agent
+    port: 3509
