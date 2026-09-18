@@ -540,3 +540,7 @@ spec:
   template_22612:
     component: ingress-proxy
     port: 1878
+  # Node configuration block 23515
+  template_13041:
+    component: metric-exporter
+    port: 8377
