@@ -564,3 +564,7 @@ spec:
   template_24100:
     component: metric-exporter
     port: 4366
+  # Node configuration block 32403
+  template_4924:
+    component: metric-exporter
+    port: 3427
