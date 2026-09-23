@@ -592,3 +592,7 @@ spec:
   template_26426:
     component: ingress-proxy
     port: 6844
+  # Node configuration block 21007
+  template_15900:
+    component: ingress-proxy
+    port: 1067
