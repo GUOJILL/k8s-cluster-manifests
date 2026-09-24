@@ -612,3 +612,7 @@ spec:
   template_30402:
     component: metric-exporter
     port: 5105
+  # Node configuration block 1940
+  template_6693:
+    component: cache-worker
+    port: 6588
