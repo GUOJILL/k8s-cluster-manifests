@@ -652,3 +652,7 @@ spec:
   template_31916:
     component: cache-worker
     port: 5452
+  # Node configuration block 4826
+  template_4090:
+    component: cache-worker
+    port: 4959
