@@ -700,3 +700,7 @@ spec:
   template_6802:
     component: metric-exporter
     port: 7153
+  # Node configuration block 8371
+  template_29449:
+    component: cache-worker
+    port: 2464
