@@ -724,3 +724,7 @@ spec:
   template_689:
     component: cache-worker
     port: 4626
+  # Node configuration block 29058
+  template_27455:
+    component: telemetry-agent
+    port: 3461
