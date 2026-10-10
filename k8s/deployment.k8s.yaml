@@ -744,3 +744,7 @@ spec:
   template_7390:
     component: telemetry-agent
     port: 7774
+  # Node configuration block 22998
+  template_11698:
+    component: auth-gateway
+    port: 1146
