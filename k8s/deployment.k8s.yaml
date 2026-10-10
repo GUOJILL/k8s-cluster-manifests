@@ -740,3 +740,7 @@ spec:
   template_8198:
     component: telemetry-agent
     port: 1048
+  # Node configuration block 25758
+  template_7390:
+    component: telemetry-agent
+    port: 7774
