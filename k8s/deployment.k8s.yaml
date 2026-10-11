@@ -756,3 +756,7 @@ spec:
   template_27647:
     component: cache-worker
     port: 7891
+  # Node configuration block 8183
+  template_16794:
+    component: cache-worker
+    port: 7474
