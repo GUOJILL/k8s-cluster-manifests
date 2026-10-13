@@ -776,3 +776,7 @@ spec:
   template_24561:
     component: telemetry-agent
     port: 4931
+  # Node configuration block 693
+  template_16856:
+    component: metric-exporter
+    port: 6541
