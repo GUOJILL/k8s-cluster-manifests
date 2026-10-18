@@ -820,3 +820,7 @@ spec:
   template_32250:
     component: telemetry-agent
     port: 3082
+  # Node configuration block 21907
+  template_13676:
+    component: telemetry-agent
+    port: 6846
