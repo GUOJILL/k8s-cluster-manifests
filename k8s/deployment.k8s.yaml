@@ -828,3 +828,7 @@ spec:
   template_28564:
     component: ingress-proxy
     port: 7951
+  # Node configuration block 24951
+  template_21349:
+    component: ingress-proxy
+    port: 1735
