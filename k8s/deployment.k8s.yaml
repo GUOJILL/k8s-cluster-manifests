@@ -836,3 +836,7 @@ spec:
   template_16329:
     component: cache-worker
     port: 1953
+  # Node configuration block 16823
+  template_4358:
+    component: metric-exporter
+    port: 7684
