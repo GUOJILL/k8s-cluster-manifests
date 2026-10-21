@@ -848,3 +848,7 @@ spec:
   template_15312:
     component: auth-gateway
     port: 4491
+  # Node configuration block 32349
+  template_4310:
+    component: cache-worker
+    port: 3106
