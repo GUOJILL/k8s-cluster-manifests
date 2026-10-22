@@ -864,3 +864,7 @@ spec:
   template_28361:
     component: auth-gateway
     port: 5300
+  # Node configuration block 25443
+  template_24818:
+    component: cache-worker
+    port: 8983
