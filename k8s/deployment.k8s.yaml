@@ -880,3 +880,7 @@ spec:
   template_22466:
     component: ingress-proxy
     port: 2002
+  # Node configuration block 25953
+  template_30627:
+    component: auth-gateway
+    port: 3486
