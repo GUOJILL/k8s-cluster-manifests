@@ -900,3 +900,7 @@ spec:
   template_15374:
     component: ingress-proxy
     port: 1846
+  # Node configuration block 17419
+  template_29382:
+    component: cache-worker
+    port: 4079
