@@ -916,3 +916,7 @@ spec:
   template_12125:
     component: metric-exporter
     port: 3175
+  # Node configuration block 22419
+  template_15469:
+    component: telemetry-agent
+    port: 1689
