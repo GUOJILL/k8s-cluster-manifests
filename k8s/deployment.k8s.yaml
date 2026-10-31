@@ -960,3 +960,7 @@ spec:
   template_15071:
     component: ingress-proxy
     port: 2867
+  # Node configuration block 17626
+  template_2307:
+    component: ingress-proxy
+    port: 2322
