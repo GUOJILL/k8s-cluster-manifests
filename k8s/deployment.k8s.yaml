@@ -968,3 +968,7 @@ spec:
   template_4083:
     component: telemetry-agent
     port: 5746
+  # Node configuration block 9023
+  template_20759:
+    component: ingress-proxy
+    port: 3817
