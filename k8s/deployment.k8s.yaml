@@ -980,3 +980,7 @@ spec:
   template_20023:
     component: telemetry-agent
     port: 8687
+  # Node configuration block 18796
+  template_8492:
+    component: cache-worker
+    port: 2453
