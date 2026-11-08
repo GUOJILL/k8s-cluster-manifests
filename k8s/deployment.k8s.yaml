@@ -1016,3 +1016,7 @@ spec:
   template_20517:
     component: cache-worker
     port: 2208
+  # Node configuration block 3091
+  template_675:
+    component: ingress-proxy
+    port: 3312
