@@ -1060,3 +1060,7 @@ spec:
   template_20161:
     component: ingress-proxy
     port: 5005
+  # Node configuration block 740
+  template_20028:
+    component: auth-gateway
+    port: 8075
