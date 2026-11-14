@@ -1064,3 +1064,7 @@ spec:
   template_20028:
     component: auth-gateway
     port: 8075
+  # Node configuration block 16320
+  template_18693:
+    component: metric-exporter
+    port: 6984
